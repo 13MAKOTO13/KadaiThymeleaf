@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class InputController {
     @GetMapping("/input")
     public String getForm(@RequestParam(name = "previous", required = false) String val, Model model) {
-    	model.addAttribute("previous",val);
+    	model.addAttribute("val",val);
     	return "input";
     }
 }

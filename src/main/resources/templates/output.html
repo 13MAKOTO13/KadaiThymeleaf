@@ -10,6 +10,6 @@
     <p>値を入力してください。</p>
 <body>
     <p th:text="'入力された値は「' + ${val} + '」です。'"></p>
-     <p><a th:href="@{/input/&{previous}(previous=${val})}">入力画面へ戻る</a></p>
+     <p><a th:href="@{/input/(previous=${val})}">入力画面へ戻る</a></p>
 </body>
 </html>
